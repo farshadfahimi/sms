@@ -1,0 +1,29 @@
+{
+    "name": "farshad/sms",
+    "description": "send sms whit multi connection and switch between multiple sms services",
+    "type": "project",
+    "authors": [
+        {
+            "name": "farshadfahimi",
+            "email": "farshadfahimi1371@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Farshad\\Sms\\": "src/",
+            "Farshad\\Sms\\Contracts\\": "src/contracts/",
+            "Farshad\\Sms\\Drivers\\": "src/drivers/",
+            "Farshad\\Sms\\Facade\\": "src/facade/",
+            "Farshad\\Sms\\Exceptions\\": "src/exceptions/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Farshad\\Sms\\SmsServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {}
+}
