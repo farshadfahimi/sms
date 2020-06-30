@@ -10,6 +10,7 @@ use Farshad\Sms\Drivers\Saharsms;
 use Farshad\Sms\Drivers\Raygansms;
 use Farshad\Sms\Drivers\Parsegreen;
 use Farshad\Sms\Drivers\Rahyab;
+use Farshad\Sms\Drivers\Ghasedaksms;
 use Farshad\Sms\Drivers\NullDriver;
 
 class SmsManager extends Manager
@@ -36,6 +37,13 @@ class SmsManager extends Manager
     {
         return new Pejvak(
             (object) $this->app['config']['sms.pejvak']
+        );
+    }
+
+    public function createGhasedaksmsDriver()
+    {
+        return new Ghasedaksms(
+            (object) $this->app['config']['sms.ghasedaksms']
         );
     }
 

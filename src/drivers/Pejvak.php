@@ -53,7 +53,7 @@ class Pejvak extends Driver
             $response = $client->sendArray([
                 'UserName'  =>  $this->username,
                 'Password'  =>  $this->password,
-                'RecipientNumber'   =>  $this->recipient,
+                'RecipientNumber'   =>  [$this->recipient],
                 'MessageBody'       =>  $this->message,
                 'SpecialNumber'     =>  $this->from,
                 'IsFlashMessage'    =>  $this->isFlash

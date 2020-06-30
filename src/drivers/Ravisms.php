@@ -14,7 +14,7 @@ class Ravisms extends Driver
     private $server = 'http://www.ravisms.ir/APPs/SMS/WebService.php?wsdl';
 
     /**
-     * The domain of Server
+     * The panel domain
      * 
      * @var string
      */
