@@ -7,9 +7,9 @@ return [
         'connection'=>  'ravisms',
         'host'      =>  'http://www.ravisms.ir/APPs/SMS/WebService.php?wsdl',
         'domain'    =>  'ravisms.ir',
-        'username'  =>  '09177119041',
-        'password'  =>  '123456',
-        'from'      =>  '10002301515',
+        'username'  =>  '',
+        'password'  =>  '',
+        'from'      =>  '',
         'to'        =>  '',
         'message'   =>  '',
         'is_flash'  =>  ''
